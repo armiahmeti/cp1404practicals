@@ -1,0 +1,12 @@
+
+Name,Typing,Reflection,Pointer Arithmetic
+Python,Dynamic,Yes,No
+Java,Static,Yes,No
+C++,Static,Yes,Yes
+C,Static,No,Yes
+Ruby,Dynamic,Yes,No
+Swift,Static,Yes,No
+Go,Static,No,No
+Rust,Static,No,Yes
+Kotlin,Static,Yes,No
+NewLang,Static,No,Yes  # Adding a unique language for distinction
