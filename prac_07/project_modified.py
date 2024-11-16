@@ -17,7 +17,8 @@ class Project:
     def __str__(self):
         return (f"{self.name}, start: {self.start_date.strftime('%d/%m/%Y')}, priority: {self.priority}, "
                 f"estimate: ${self.estimate:.2f}, completion: {self.completion_percentage}%")
-
+    def update_estimate(self, new_estimate):
+        return self.completion_percentage >=
     def is_completed(self):
         """Check if the project is fully completed."""
         return self.completion_percentage >= 100
