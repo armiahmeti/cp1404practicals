@@ -1,0 +1,10 @@
+Name,Typing,Reflection,Year,PointerArithmetic
+Python,Dynamic,Yes,1991,No
+Java,Static,No,1995,No
+C++,Static,Yes,1983,Yes
+JavaScript,Dynamic,Yes,1995,No
+C,Static,No,1972,Yes
+D,Static,Yes,2001,Yes
+Go,Static,No,2009,No
+Rust,Static,No,2010,No
+Swift,Static,No,2014,No

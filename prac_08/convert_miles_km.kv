@@ -1,0 +1,25 @@
+# Provided for marking; program loads from Python string.
+BoxLayout:
+    orientation: "vertical"
+    padding: 10
+    spacing: 10
+
+    BoxLayout:
+        orientation: "horizontal"
+        spacing: 10
+        Button:
+            text: "Up"
+            on_press: app.handle_increment(1)
+        TextInput:
+            id: miles_input
+            text: ""
+            multiline: False
+            on_text: app.handle_text_change(self.text)
+            input_filter: "float"
+        Button:
+            text: "Down"
+            on_press: app.handle_increment(-1)
+
+    Label:
+        id: output_label
+        text: app.km_text

@@ -1,0 +1,29 @@
+# Provided as a separate kv file for marking (logic loads from Python string).
+# Content mirrors the layout used by squaring.py.
+BoxLayout:
+    orientation: "vertical"
+    padding: 10
+    spacing: 10
+
+    BoxLayout:
+        orientation: "horizontal"
+        spacing: 10
+        TextInput:
+            id: input_number
+            text: ""
+            multiline: False
+            input_filter: "int"
+        Button:
+            text: "Square"
+            on_press: app.handle_calculate(input_number.text)
+        Label:
+            id: output_label
+            text: app.output_text
+            color: (1, 0.4, 0.7, 1)
+
+    BoxLayout:
+        orientation: "horizontal"
+        size_hint_y: None
+        height: self.minimum_height
+        Label:
+            text: "Enter a number and press \"Square\"."
